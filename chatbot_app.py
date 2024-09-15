@@ -1,4 +1,4 @@
-#import streamlit as st
+import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 
@@ -17,7 +17,7 @@ def scrape_news():
 # Streamlit app code
 st.set_page_config(page_title="ATA Scrapper", page_icon=":newspaper:", layout="wide")
 
-# Display custom logo
+# Display custom logo (make sure to place the logo file in the same directory)
 st.image("ata_scrapper_logo.png", use_column_width=True)
 
 st.title("ATA Scrapper")
@@ -32,4 +32,3 @@ if st.button('Scrape News Headlines'):
 
 # Instructions
 st.write("Click the button above to scrape the latest news headlines.")
-
